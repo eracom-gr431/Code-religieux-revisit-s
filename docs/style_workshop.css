@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    page-break-inside:avoid;
+}
+
+@font-face {
+    font-family:'nimbus_sans_lregucond';
+    src: url('font/nimbus-sans-l_regular-condensed-webfont.eot');
+    src: url('font/nimbus-sans-l_regular-condensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/nimbus-sans-l_regular-condensed-webfont.woff2') format('woff2'),
+         url('font/nimbus-sans-l_regular-condensed-webfont.woff') format('woff'),
+         url('font/nimbus-sans-l_regular-condensed-webfont.ttf') format('truetype'),
+         url('font/nimbus-sans-l_regular-condensed-webfont.svg#nimbus_sans_lregucond') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+	font-family:'league_gothicitalic';
+    src: url('font/leaguegothic-italic-webfont.eot');
+    src: url('font/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/leaguegothic-italic-webfont.woff2') format('woff2'),
+         url('font/leaguegothic-italic-webfont.woff') format('woff'),
+         url('font/leaguegothic-italic-webfont.ttf') format('truetype'),
+         url('font/leaguegothic-italic-webfont.svg#league_gothicitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'bagnardregular';
+    src: url('font/bagnard-webfont.eot');
+    src: url('font/bagnard-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/bagnard-webfont.woff2') format('woff2'),
+         url('font/bagnard-webfont.woff') format('woff'),
+         url('font/bagnard-webfont.ttf') format('truetype'),
+         url('font/bagnard-webfont.svg#bagnardregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'lateefregular';
+    src: url('font/lateefregot-webfont.eot');
+    src: url('font/lateefregot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/lateefregot-webfont.woff2') format('woff2'),
+         url('font/lateefregot-webfont.woff') format('woff'),
+         url('font/lateefregot-webfont.ttf') format('truetype'),
+         url('font/lateefregot-webfont.svg#lateefregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_monoregular';
+    src: url('font/ptm55ft-webfont.eot');
+    src: url('font/ptm55ft-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/ptm55ft-webfont.woff2') format('woff2'),
+         url('font/ptm55ft-webfont.woff') format('woff'),
+         url('font/ptm55ft-webfont.ttf') format('truetype'),
+         url('ptm55ft-webfont.svg#pt_monoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: tahoma;
+
+}
+
+
+
+.bagnard{
+	font-family: "bagnardregular", serif;
+}
+
+
+.arabic{
+	font-family: 'lateefregular';
+    font-weight: normal;
+    font-style: normal;
+    direction:rtl
+}
+
+.league{
+	font-family: 'league_gothicitalic';
+}
+
+.pt-mono{
+	font-family: 'pt_monoregular';
+}
+
+.hebreux{
+	font-family: 'tahoma';
+}
+
+a, a:hover, a:active {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+}
+
+
+footer{
+    text-align:left;
+    font-size:0.60em;
+    position: fixed;
+    bottom: 3px;
+    margin-left: 5%;
+    font-family: "nimbus_sans_lregucond";
+}
+
+.menu-element{
+	position: absolute;
+}
+
+.navigation {
+	font-size: 10px;
+	position: fixed;
+	width: 500px;
+	left:15%;
+    top: 10px;
+}
+
+.navigation div {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.navigation div a {
+    color: black;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: black;
+
+
+}
+
+.rectangle{
+	background-color: yellow;
+    text-align: center;
+	position: fixed;
+	padding: 5px 2px 7px 5px;
+    width:80px;
+    z-index: 1;
+
+}
+
+
+.container {
+    margin: auto;
+    width: 1040px;
+    background-color: blue;
+    margin-top: 100px;
+}
+
+.boite-1-col {
+    margin: 10px 10px 0px 0px; 
+    float: left;
+    width: 250px;
+}
+.boite-2-col {
+    margin: 10px 10px 0px 0px; 
+    float: left;
+    width: 510px;
+    overflow: hidden;
+}
+
+.boite-invisible {
+}
+.boite-bords {
+    border: 2px solid black; 
+}
+
+p{
+    position: relative;
+}
+
+.popup-element {
+  position: fixed;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+}
+
+.popup-background {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+
+
